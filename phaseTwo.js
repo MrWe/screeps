@@ -66,8 +66,8 @@ var buildExtensions = function(){
 	var startSpawny = spawnerPos.y + 1;
 
 	for(var i = 0; i < 5; i++){
-		//Game.rooms.roomName.createConstructionSite(startSpawnx+i,startSpawny+i, Game.STRUCTURE_EXTENSION);
-		Game.rooms.roomName.createConstructionSite(10, 15, Game.STRUCTURE_ROAD);
+		Game.rooms[roomName].createConstructionSite(startSpawnx+i,startSpawny+i, Game.STRUCTURE_EXTENSION);
+
 	}
 
 }
