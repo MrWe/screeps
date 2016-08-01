@@ -7,7 +7,6 @@
  * mod.thing == 'a thing'; // true
  */
 
-//TODO: Make so deposit 'reste-energy' before going to mine more.
 //TODO: Remove duplicate code
 var roleHarvester = {
 

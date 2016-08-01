@@ -6,8 +6,7 @@
  * var mod = require('spawnAlgorithm');
  * mod.thing == 'a thing'; // true
  */
-
-var spawn = {
+var spawnAlgorithm = {
     run: function(){
 
         for(var name in Memory.creeps) {
