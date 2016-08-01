@@ -7,10 +7,8 @@ var phaseOne = require('phaseOne');
 module.exports.loop = function () {
     
     var roomName = Game.spawns['Spawn'].room.name;
-    var controller = Game.rooms[roomName].find(FIND_MY_STRUCTURES, {filter: {structureType: STRUCTURE_CONTROLLER}});
-    console.log(controller.level);
-    console.log(controller.progress);
-    console.log(controller.reservation);
+    var controller = Game.rooms[roomName].find(FIND_MY_STRUCTURES, {filter: {structureType: STRUCTURE_CONTROLLER}})[0];
+
     if(controller.level == 2){
         phaseOne.run();
     }
