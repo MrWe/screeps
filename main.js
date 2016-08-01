@@ -3,6 +3,7 @@ var roleUpgrader = require('role.upgrader');
 var roleBuilder = require('role.builder');
 var spawnAlgorithm = require('spawnAlgorithm');
 var phaseOne = require('phaseOne');
+var phaseTwo = require('phaseTwo');
 
 module.exports.loop = function () {
     
