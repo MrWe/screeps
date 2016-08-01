@@ -9,7 +9,7 @@ module.exports.loop = function () {
 
     //var controller = Game.rooms[name].find(FIND_MY_STRUCTURES, {filter: {structureType: STRUCTURE_CONTROLLER}});
     //console.log(controller.level);
-    if(controller.level == 2){
+    /*if(controller.level == 2){
         phaseOne.run();
     }
 
@@ -27,4 +27,5 @@ module.exports.loop = function () {
         }
        
     }
+    */
 }
