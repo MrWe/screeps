@@ -59,6 +59,7 @@ var spawn = function(creepSize){
 }
 
 var buildExtensions = function(){
+	var roomName = _.filter(Game.creeps, function(creep){return creep})[0].room.name;
 	var spawnerPos = Game.rooms[roomName].find(FIND_MY_STRUCTURES, {filter: {structureType: STRUCTURE_SPAWN}})[0].pos;
 
 	var startSpawnx = spawnerPos.x - 3;
