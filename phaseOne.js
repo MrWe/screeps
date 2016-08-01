@@ -13,7 +13,7 @@ var cleanMemoryCreep = require('cleanMemoryCreep');
 var phaseOne = {
 	run: function(){
 		var creepSize = [WORK,CARRY,CARRY,MOVE,MOVE];
-		cleanMemoryCreep.run();
+		cleanMemoryCreep.run;
 		spawn(creepSize);
 	},
 	spawn: function(creepSize){
