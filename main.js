@@ -9,13 +9,12 @@ module.exports.loop = function () {
 
     var roomName = _.filter(Game.creeps, function(creep){return creep})[0].room.name;
     var controller = Game.rooms[roomName].find(FIND_MY_STRUCTURES, {filter: {structureType: STRUCTURE_CONTROLLER}})[0];
-    var spawner = Game.rooms[roomName].find(FIND_MY_STRUCTURES, {filter: {structureType: STRUCTURE_SPAWN}})[0].pos;
-
-    console.log(spawner.x);
-    console.log(spawner.y);
-
-    if(controller.level == 2){
+    
+    if(controller.level == 1){
         phaseOne.run();
+    }
+    else if(controller.level == 2){
+        phaseTwo.run();
     }
 
     for(var name in Game.creeps) {
