@@ -8,8 +8,8 @@ module.exports.loop = function () {
     
     var roomName = Game.spawns['Spawn'].room.name;
     var controller = Game.rooms[roomName].find(FIND_MY_STRUCTURES, {filter: {structureType: STRUCTURE_CONTROLLER}});
-    console.log(controller.level);
-    if(controller.level == 2){
+    console.log(controller.level());
+    if(controller.level() == 2){
         phaseOne.run();
     }
 
