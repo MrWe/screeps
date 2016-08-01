@@ -15,7 +15,7 @@ var phaseOne = {
 		var creepSize = [WORK,CARRY,CARRY,MOVE,MOVE];
 		cleanMemoryCreep.run();
 		spawn(creepSize);
-	}
+	},
 	spawn: function(creepSize){
 		var harvesters = _.filter(Game.creeps, (creep) => creep.memory.role == 'harvester');
         var upgraders = _.filter(Game.creeps, (creep) => creep.memory.role == 'upgrader');
