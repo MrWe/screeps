@@ -41,4 +41,4 @@ var spawnAlgorithm = {
     }
 }
 
-module.exports = spawn;
+module.exports = spawnAlgorithm;
