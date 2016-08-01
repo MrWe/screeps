@@ -22,20 +22,20 @@ var spawnAlgorithm = {
         if(harvesters.length <= 5) {
             if(harvesters.length <= 5){
                 var newName = Game.spawns['Spawn'].createCreep([WORK,WORK,CARRY,CARRY,MOVE,MOVE], undefined, {role: 'harvester'});
-                console.log('Spawning new harvester: ' + newName);
+                //console.log('Spawning new harvester: ' + newName);
             }
             else{
                 var newName = Game.spawns['Spawn'].createCreep([WORK,WORK,WORK,WORK,CARRY,CARRY,CARRY,CARRY,MOVE,MOVE,MOVE,MOVE], undefined, {role: 'harvester'});
-                console.log('Spawning new harvester: ' + newName);
+                //console.log('Spawning new harvester: ' + newName);
             }
         }
          else if(upgraders.length <= 6) {
             var newName = Game.spawns['Spawn'].createCreep([WORK,WORK,CARRY,CARRY,CARRY,MOVE,MOVE], undefined, {role: 'upgrader'});
-            console.log('Spawning new upgrader: ' + newName);
+            //console.log('Spawning new upgrader: ' + newName);
         }
         else if(builders.length <= 5) {
             var newName = Game.spawns['Spawn'].createCreep([WORK,WORK,CARRY,CARRY,CARRY,MOVE,MOVE], undefined, {role: 'builder'});
-            console.log('Spawning new builder: ' + newName);
+            //console.log('Spawning new builder: ' + newName);
         }
        
     }

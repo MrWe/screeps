@@ -25,11 +25,11 @@ var spawn = function(creepSize){
 
     if(harvesters.length <= 5){
     	var newName = Game.spawns['Spawn'].createCreep(creepSize, undefined, {role: 'harvester'});
-        console.log('Spawning new harvester: ' + newName);
+        //console.log('Spawning new harvester: ' + newName);
     }
     else if(upgraders.length <= 5){
     	var newName = Game.spawns['Spawn'].createCreep(creepSize, undefined, {role: 'upgrader'});
-        console.log('Spawning new upgrader: ' + newName);
+        //console.log('Spawning new upgrader: ' + newName);
     }
 }
 

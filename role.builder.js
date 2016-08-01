@@ -39,10 +39,16 @@ var roleBuilder = {
 	    }
 	    else{
 	        if(!creep.memory.mineSource || creep.memory.mineSource == 2){
-	            var randInt = Math.floor(Math.random()*2); //random int between 0 and 1 
-	            console.log("RandInt: " + randInt);
-	            creep.memory.mineSource = randInt;
-	            console.log(creep.name + ": " +creep.memory.mineSource);
+	            var randInt = Math.floor(Math.random()*101); //random int between 0 and 100 
+	            //console.log("RandInt: " + randInt);
+	            if(randInt < 50){
+	            	
+	            }
+	            else{
+	            	creep.memory.mineSource = 0;	
+	            }
+	            
+	            //console.log(creep.name + ": " +creep.memory.mineSource);
 	        }
 	        
 	        
