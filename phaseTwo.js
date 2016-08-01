@@ -25,7 +25,6 @@ var phaseTwo = {
 		}
 		
 		if(Game.rooms[roomName].find(FIND_MY_STRUCTURES, {filter: {structureType: STRUCTURE_EXTENSION}}).length < 5){
-			console.log(Game.rooms[roomName].find(FIND_MY_STRUCTURES, {filter: {structureType: STRUCTURE_EXTENSION}}).length);
 			buildExtensions();	
 		}
 		cleanMemoryCreep.run;
@@ -67,6 +66,7 @@ var buildExtensions = function(){
 	var startSpawny = spawnerPos.y + 1;
 
 	for(var i = 0; i < 5; i++){
+		console.log("Hei");
 		Game.rooms[roomName].createConstructionSite(startSpawnx+i,startSpawny+i, Game.STRUCTURE_EXTENSION);
 
 	}
