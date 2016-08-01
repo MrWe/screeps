@@ -25,6 +25,7 @@ var phaseTwo = {
 		}
 		
 		if(Game.rooms[roomName].find(FIND_MY_STRUCTURES, {filter: {structureType: STRUCTURE_EXTENSION}}).length < 5){
+			console.log(Game.rooms[roomName].find(FIND_MY_STRUCTURES, {filter: {structureType: STRUCTURE_EXTENSION}}).length);
 			buildExtensions();	
 		}
 		cleanMemoryCreep.run;
