@@ -9,6 +9,9 @@ module.exports.loop = function () {
 
     var roomName = _.filter(Game.creeps, function(creep){return creep})[0].room.name;
     var controller = Game.rooms[roomName].find(FIND_MY_STRUCTURES, {filter: {structureType: STRUCTURE_CONTROLLER}})[0];
+    var spawner = Game.rooms[roomName].find(FIND_MY_STRUCTURES, {filter: {structureType: STRUCTURE_SPAWN}})[0].pos;
+
+    console.log(spawner);
 
     if(controller.level == 2){
         phaseOne.run();
