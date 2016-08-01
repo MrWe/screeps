@@ -19,14 +19,15 @@ var phaseOne = {
 };
 
 var spawn = function(creepSize){
+
 	var harvesters = _.filter(Game.creeps, (creep) => creep.memory.role == 'harvester');
     var upgraders = _.filter(Game.creeps, (creep) => creep.memory.role == 'upgrader');
 
-    if(harvesters <= 5){
+    if(harvesters.length <= 5){
     	var newName = Game.spawns['Spawn'].createCreep(creepSize, undefined, {role: 'harvester'});
         console.log('Spawning new harvester: ' + newName);
     }
-    else if(upgraders <= 5){
+    else if(upgraders.length <= 5){
     	var newName = Game.spawns['Spawn'].createCreep(creepSize, undefined, {role: 'upgrader'});
         console.log('Spawning new upgrader: ' + newName);
     }
