@@ -6,7 +6,7 @@ var phaseOne = require('phaseOne');
 
 module.exports.loop = function () {
     
-    var roomName = "";
+    /*var roomName = "";
     for(var name in Game.rooms){
         roomName = Game.rooms[name];
     }
@@ -30,4 +30,5 @@ module.exports.loop = function () {
         }
        
     }
+    */
 }
