@@ -8,7 +8,7 @@ var phaseTwo = {
 	run: function(){
 		var creepSize = [];
 		var roomName = _.filter(Game.creeps, function(creep){return creep})[0].room.name;
-		var extensionLength = Game.rooms[roomName].find(FIND_MY_STRUCTURES, {filter: {structureType: STRUCTURE_EXTENSION}}).length;
+		var extensionLength = Game.rooms[roomName].find(FIND_MY_STRUCTURES, {filter: {structureType: STRUCTURE_CONSTRUCTION_SITES}}).length;
 		console.log("extensionLength: " + extensionLength)
 		if(Game.rooms[roomName].find(FIND_MY_STRUCTURES, {filter: {structureType: STRUCTURE_EXTENSION}}).length == 1){
 			creepSize = [WORK,CARRY,CARRY,MOVE,MOVE,MOVE];	
